@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="applicable-device" content="mobile" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>澳六图库</title>
+</head>
+
+<body>
+    <div class="top-title">澳六图库</div>
+    <div class="body-content">
+        <img src="./images/banner_1.png" width="100%">
+        <div class="nav">
+            <div><a href="#aa">开奖信息</a></div> 
+            <div><a href="#bb">图库图纸</a></div>
+            <div><a href="#cc">”API 接口”</a></div>
+        </div>
+        <div class="box" id="aa">
+            <div class="box-title">
+                <img class="img-icon" src="./images/icon_2.png">引用“开奖信息”
+            </div>
+            <div class="box-content">
+                <div class="content-top">
+                    (无广告、免管理、即时更新、兼容所有浏觉器)
+                </div>
+                <input type="text" value="<iframe src='http://www.stat.ncu.edu.tw/'></iframe>" class="input-text" id="inputText1" readonly>
+                <div class="content-bottom">
+                    <div class="btn-l btn" onclick="copyText('inputText1')">
+                        <img class="img-icon" src="./images/icon_5.png" style="margin-left: -2rem;">复制代码
+                    </div>
+                    <div class="btn-r btn" onclick="openUrl('http://www.stat.ncu.edu.tw/')">预览效果</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box" id="bb">
+            <div class="box-title">
+                <img class="img-icon" src="./images/icon_3.png">引用“图库图纸”
+            </div>
+            <div class="box-content">
+                <div class="content-top">
+                    (无广告、免管理、即时更新、兼容所有浏觉器)
+                </div>        
+                <input type="text" value="<iframe src='http://www.stat.ncu.edu.tw/'></iframe>" class="input-text" id="inputText2" readonly>
+                <div class="content-bottom">
+                    <div class="btn-l btn" onclick="copyText('inputText2')">
+                        <img class="img-icon" src="./images/icon_5.png" style="margin-left: -2rem;">复制代码
+                    </div>
+                    <div class="btn-r btn" onclick="openUrl('http://www.stat.ncu.edu.tw/')">预览效果</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box" id="cc">
+            <div class="box-title">
+                <img class="img-icon" src="./images/icon_4.png">图库 ”API 接口”
+            </div>
+            <div class="box-content">
+                <div class="content-top">
+                    <span class="circle-icon"></span>
+                    本往提供查询接口，供查询最新图纸数据
+                </div>        
+                <div class="content-text">
+                    <span class="text1">示例:</span>
+                    <span class="text2">Https://xx/gallerynew/open/api/get/listPicture </span>
+                    <br>
+                    <span class="text1">调用:</span>
+                    <span class="text2">GET</span>
+                    <br>
+                    <span class="text1">返回:</span>
+                    <span class="text2">JASON</span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">调用示例:</span>
+                    <span class="text2">Https://xx/gallerynew/open/api/get/listPicture? id=1&sign=222xtamp=16266&lotteryType=28&page Size=1&pageNum=10</span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">签名sign获取规则:</span>
+                    <span class="text2">secretkey,timestamp,lotteryType按字母表升序排列, MD5加密后的字符串即为sign </span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">例子:</span>
+                    <span class="text2">MD5 (lotteryType=2&secretKey=2222xtamp=13123)</span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">返回示例:</span>
+                </div>
+
+                <textarea name="mytext" id="textarea1" readonly
+                rows="20"
+                cols="40"
+                required>
+"code": 10000,
+"data":«
+"list":r
+"height": 1008,
+"hostid": 1,
+"pictureId": 202314200400,
+"picturexame "：“澳门跑狗圈”，
+"pictureTypeId": 400,
+"pictureurl":"https://file.qwertou.com/galleryfil
+es/system/anlhc/col/2023/142/ampgt.jpg?
+t=1684681108000*,
+"updateTime": 1684681108000,
+"width":656 
+"msg"：“操作成功”，
+"serverrime": 1684730457439,
+"subcode": 10000, 
+"subMSg”："操作成功”
+"success":true
+}
+</textarea>
+                <div class="copy-btn" onclick="copyText('textarea1')">
+                    <img class="img-icon" src="./images/icon_5.png" style="margin-left: -1rem; padding: 0">
+                    复制代码
+                </div>
+                <div class="content-block-tip">
+                    <span class="tip-title">返回字段說明:</span>
+                    <span class="tip-text">1 code : 消息編碼，10000 代表成功;</span>
+                    <span class="tip-text">2 msg：消息描述 </span>
+                    <span class="tip-text">3 data：具體图片數據</span>
+                </div>
+                
+                <div class="content-top">
+                    <span class="circle-icon"></span>
+                    本往提供查询接口，供查询最新图纸数据
+                </div>        
+                <div class="content-text">
+                    <span class="text1">示例:</span>
+                    <span class="text2">Https://xx/gallerynew/open/api/get/listPicture </span>
+                    <br>
+                    <span class="text1">调用:</span>
+                    <span class="text2">GET</span>
+                    <br>
+                    <span class="text1">返回:</span>
+                    <span class="text2">JASON</span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">调用示例:</span>
+                    <span class="text2">Https://xx/gallerynew/open/api/get/listPicture? id=1&sign=222xtamp=16266&lotteryType=28&page Size=1&pageNum=10</span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">签名sign获取规则:</span>
+                    <span class="text2">secretkey,timestamp,lotteryType按字母表升序排列, MD5加密后的字符串即为sign </span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">例子:</span>
+                    <span class="text2">MD5 (lotteryType=2&secretKey=2222xtamp=13123)</span>
+                </div>
+                
+                <div class="content-text">
+                    <span class="text1">返回示例:</span>
+                </div> 
+                
+                <textarea name="mytext" id="textarea2" readonly
+                rows="20"
+                cols="40"
+                required>
+"code": 10000,
+"data":«
+"list":r
+"height": 1008,
+"hostid": 1,
+"pictureId": 202314200400,
+"picturexame "：“澳门跑狗圈”，
+"pictureTypeId": 400,
+"pictureurl":"https://file.qwertou.com/galleryfil
+es/system/anlhc/col/2023/142/ampgt.jpg?
+t=1684681108000*,
+"updateTime": 1684681108000,
+"width":656 
+"msg"：“操作成功”，
+"serverrime": 1684730457439,
+"subcode": 10000, 
+"subMSg”："操作成功”
+"success":true
+}
+</textarea>
+                <div class="copy-btn" onclick="copyText('textarea2')">
+                    <img class="img-icon" src="./images/icon_5.png" style="margin-left: -1rem; padding: 0">
+                    复制代码
+                </div>
+                <div class="content-block-tip">
+                    <span class="tip-title">返回字段說明:</span>
+                    <span class="tip-text">1 code : 消息編碼，10000 代表成功;</span>
+                    <span class="tip-text">2 msg：消息描述 </span>
+                    <span class="tip-text">3 data：具體图片數據</span>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="box" style="margin-bottom: 6rem;">
+            <div class="box-title">
+                <img class="img-icon" src="./images/icon_7.png">澳六图库数据调用说明
+            </div>
+            <div class="box-content"> 
+                <div class="content-text text-block">
+                    <span class="text1">开奖调用收费吗？</span>
+                    <span class="text2">答：澳六图库在本网站公布的调用图纸</span>
+                </div>
+                
+                <div class="content-text text-block">
+                    <span class="text1">澳六图纸调用的特色是什么？</span>
+                    <span class="text2">答：图纸全，开奖准时</span>
+                </div>
+                
+                <div class="content-text text-block">
+                    <span class="text1">澳六图纸调用稳定吗？</span>
+                    <span class="text2">答：本站数据有专人维护及监控，保证数据稳定及时</span>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div>
+                <div class="bottom-support">
+                    <div class="support-l">技术支持</div>
+                    <div class="support-r">
+                        <a href='tencent://message/?uin=70362222&amp;Site=web&amp;Menu=yes'>
+                            <img class="img-icon" src="./images/icon_6.png" style="margin-bottom: -0.5rem;">
+                        70362222</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="scrolltop" role="button"> </a>
+</body>
+
+<script>
+    function openUrl(url){
+        let height = 400;
+        let width = 400;
+        let top = window.innerHeight-height*1.3;
+        let left = window.innerWidth/2 -width/2;
+        window.open(
+            url, 
+            '_blank', 
+            'location=yes,height='+height+',width='+width+',top='+top+',left='+left+',scrollbars=yes,status=yes'
+        );
+    }
+
+    function copyText(e) {
+        let ele = document.getElementById(e);
+        ele.select();
+        document.execCommand("copy");
+    }
+</script>
+</html>

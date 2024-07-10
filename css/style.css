@@ -1,0 +1,374 @@
+
+    html, body {
+        scroll-behavior: smooth;
+    }
+    body {
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+        background: #EBEBEB;
+    }    
+    .body-content {
+        padding: 1rem;
+    }
+    
+    .img-icon {
+        width: 1.4rem;
+        margin-bottom: -0.3rem;
+        padding: 0 0.5rem;
+    }
+
+    .top-title {
+        background-color: #fff;
+        background: linear-gradient(180deg, #2CEE89 0%, #07C160 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .top-title:before {
+        display: block;
+        content: '';
+        background-color: #fff;
+        box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .top-title:after {
+        background-repeat: no-repeat;
+        display: block;
+        content: '';
+        transform: translateX(-50%);
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../images/icon_1.png);
+        position: absolute;
+        background-size: contain;
+        top: 7px;
+        margin-left: 35px;
+    }
+    .nav {
+        background: #fff;
+        border: 1px solid #12B45F;
+        border-radius: 10px;        
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+    .nav div {
+        background: #fff;
+        border: 1px solid #35BF77;
+        color: #07C160;
+        border-radius: 5px;
+        width: 33%;
+        line-height: 2.5;
+        margin: 1rem;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .nav div a {
+        color: #07C160;
+        text-decoration: none;
+    }
+    .nav div:nth-child(2) {
+        margin: 1rem 0;
+    }
+    .nav div:hover {
+        background-color: #35BF77;
+        border: 1px solid #35BF77;
+    }
+    .nav div:hover a{
+        color: #fff;
+    }
+    .box {
+        position: relative;
+        background: #fff;
+        border: 1px solid #07C160;
+        border-radius: 10px;
+        margin: 1rem auto;
+    }
+    .box-title {
+        box-sizing: border-box;
+        background: #07C160;
+        color: #fff;
+        opacity: 0.85;
+        border: 1px solid #07C160;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .box-content {
+        background: #fff;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .content-top {
+        font-size: 0.5rem;
+        line-height: 1;
+        display: flex;
+    }
+    .input-text {
+        background: #E8E8E8;
+        color: #838383;
+        border-radius: 10px;
+        padding: 0.8rem;
+        margin: 1rem auto;
+        font-size: 0.5rem;
+        border: 0px solid;
+        width: 94%;
+    }
+    .input-text:focus {
+        outline: none;
+    }
+    .content-bottom {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .content-bottom .btn {
+        background: #fff;
+        border: 1px solid #35BF77;
+        color: #07C160;
+        border-radius: 10px;
+        width: 50%;
+        line-height: 2.5;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .content-bottom .btn:hover {
+        background-color: #35BF77;
+        border: 1px solid #35BF77;
+        color: #fff;
+    }
+    .content-bottom .btn.btn-r {
+        margin-left: 5%;
+    }
+    .circle-icon {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: #12B45F;
+        display: block;
+        margin-right: 0.5rem;
+    }
+    .content-text {
+        font-size: 0.5rem;
+        margin: 1rem auto;
+    }
+    .content-text .text2{
+        color: #07C160;
+    }
+    .content-block{
+        background: #fff;
+        box-shadow: 0px -2px 8px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 0.5rem;
+        color: #838383;
+        line-height: 1.5;
+    }
+    .content-block:after{
+        display: block;
+        content: '}';
+    }
+    .copy-btn {
+        background: #fff;
+        border: 1px solid #35BF77;
+        color: #07C160;
+        border-radius: 2rem;
+        width: 30%;
+        line-height: 2;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1rem;
+        position: absolute;
+        right: 2rem;
+        margin-top: -3.5rem;
+    }
+    .copy-btn img {
+        margin-left: 0 !important;
+        padding: 0;
+        width: 1.2rem;
+    }
+    .copy-btn:hover {
+        background-color: #35BF77;
+        border: 1px solid #35BF77;
+        color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .content-block-tip {
+        background: #E8E8E8;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 0.5rem;
+        color: #000;
+        line-height: 1.5;
+        margin: 1rem auto;
+    }
+    .content-block-tip span {
+        display: block;
+    }
+    .content-text.text-block{
+        margin: auto;
+    }
+    .content-text.text-block span {
+        display: block;
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+    .bottom-support {
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 1rem;
+        line-height: 2;
+        padding: 1rem;
+    }
+    .bottom-support > div {
+        width: 100%;
+        line-height: 2.5;
+        text-align: center;
+    }
+    .support-l {
+        border-radius: 10px 0  0 10px ;
+        background: #07C160;
+        color: #fff;
+        width: 100%;
+    }
+    .support-r {
+        border-radius:  0 10px 10px 0 ;
+        background: #E8E8E8;
+    }
+    .support-r a {
+        color: #000;
+    }
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+
+    .box2 {
+        position: relative;
+        max-width: 480px;
+        margin: auto;
+    }
+    .box2>div {
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        position: fixed;
+        bottom: 1rem;  
+        right: 0;
+        max-width: 448px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .scrolltop {
+        width: 3rem;
+        height: 3rem;
+        background-image: url(../images/icon_8.png);
+        position: fixed;
+        background-size: contain;
+        pointer-events: all;
+        top: 80vh;
+        left: calc(100vw - 45rem);
+        cursor: pointer;
+    }
+    .pop-wrap {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        content: '';
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .pop-wrap.show {
+        display: block;
+        z-index: 1;
+    }
+    .pop-box {
+        position: relative;
+        background: #fff;
+        border: 1px solid #07C160;
+        border-radius: 10px;
+		margin: 20% auto;
+		width: 25%;
+    }
+    .pop-box .box-content {
+        min-height: 5rem;
+    }
+    .pop-title {
+        box-sizing: border-box;
+        background: #07C160;
+        color: #fff;
+        text-align: center;
+        border: 1px solid #07C160;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .btn-close {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        cursor: pointer;
+    }
+    textarea {
+        resize: none;
+        background: #fff;
+        box-shadow: 0px -2px 8px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 0.5rem;
+        color: #838383;
+        line-height: 1.5;
+        width: 92%;
+        overflow: hidden;
+        border: none;
+        outline: none;
+    }
+    @media screen and (max-width:1680px) {
+		.scrolltop {
+            left: calc(100vw - 25rem);
+        }
+    }
+    @media screen and (max-width:1440px) {
+		.input-text {
+			width: 92%;
+		}
+    }
+	@media screen and (max-width:800px) {
+		.pop-box {
+			margin: 50% auto;
+			width: 50%;
+		}
+		.input-text {
+			width: 90%;
+		}
+    }
+    @media screen and (max-width:480px) {
+        .content-block .copy-btn {
+            width: 33%;
+        }
+		.pop-box {
+			width: 80%;
+		}
+        .scrolltop {
+            left: calc(100vw - 4rem);
+            top: 78vh
+        }
+    }
